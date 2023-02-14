@@ -1,0 +1,390 @@
+{
+  "Day0": [
+    {
+      "Scenario": {
+        "Data": {
+          "UIName": "Escort Guest",
+          "Sprite": "EscortIcon",
+          "Duration": 400.0,
+          "VoiceOverID": "VOLost",
+          "SuccessActionSet": "LeaveCasinoActionSet",
+          "FailureActionSet": "LeaveCasinoActionSet"
+        },
+        "Steps": [
+          {
+            "StepType": "SetActionStep",
+            "ActionSet": "WaitActionSet"
+          },
+          {
+            "StepType": "DialogueStep",
+            "DialogueStartNode": "EscortDialoguePart1",
+            "DialogueVariables": "[{\"Name\":\"$escort_destination\",\"Value\":\"Resort Tower Suite Elevators\"}]",
+            "ExpectedTimeToCompletion": 8.0
+          },
+          {
+            "StepType": "SetActionStep",
+            "ActionSet": "FollowSecurityOfficerActionSet"
+          },
+          {
+            "StepType": "EscortStep",
+            "Destination": "ResortTowerSuiteElevators",
+            "ExpectedTimeToCompletion": 10.0
+          }
+        ]
+      },
+      "Hour": 0,
+      "Section": "Section1"
+    },
+    {
+      "Scenario": {
+        "Data": {
+          "UIName": "Escort Guest",
+          "Sprite": "EscortIcon",
+          "Duration": 400.0,
+          "VoiceOverID": "VOLost",
+          "SuccessActionSet": "LeaveCasinoActionSet",
+          "FailureActionSet": "LeaveCasinoActionSet"
+        },
+        "Steps": [
+          {
+            "StepType": "SetActionStep",
+            "ActionSet": "WaitActionSet"
+          },
+          {
+            "StepType": "DialogueStep",
+            "DialogueStartNode": "EscortDialoguePart1",
+            "DialogueVariables": "[{\"Name\":\"$escort_destination\",\"Value\":\"Bell Desk\"}]",
+            "ExpectedTimeToCompletion": 8.0
+          },
+          {
+            "StepType": "SetActionStep",
+            "ActionSet": "FollowSecurityOfficerActionSet"
+          },
+          {
+            "StepType": "EscortStep",
+            "Destination": "BellDesk",
+            "ExpectedTimeToCompletion": 10.0
+          }
+        ]
+      },
+      "Hour": 2,
+      "Section": "Section2"
+    },
+    {
+      "Scenario": {
+        "Data": {
+          "UIName": "Intoxicated Guest",
+          "Sprite": "DrunkIcon",
+          "Duration": 400.0,
+          "VoiceOverID": "VO408",
+          "SuccessActionSet": "LeaveCasinoActionSet",
+          "FailureActionSet": "LeaveCasinoActionSet"
+        },
+        "Steps": [
+          {
+            "StepType": "SetActionStep",
+            "ActionSet": "RoamActionSet"
+          },
+          {
+            "StepType": "DialogueStep",
+            "DialogueStartNode": "RedHerringGuestStart",
+            "DialogueVariables": "[]",
+            "ExpectedTimeToCompletion": 8.0
+          }
+        ]
+      },
+      "Hour": 6,
+      "Section": "Section1"
+    },
+    {
+      "Scenario": {
+        "Data": {
+          "UIName": "Intoxicated Guest",
+          "Sprite": "DrunkIcon",
+          "Duration": 400.0,
+          "VoiceOverID": "VO408",
+          "SuccessActionSet": "LeaveCasinoActionSet",
+          "FailureActionSet": "LeaveCasinoActionSet"
+        },
+        "Steps": [
+          {
+            "StepType": "SetActionStep",
+            "ActionSet": "RoamActionSet"
+          },
+          {
+            "StepType": "DialogueStep",
+            "DialogueStartNode": "PukingGuestStart",
+            "DialogueVariables": "[]",
+            "ExpectedTimeToCompletion": 8.0
+          },
+          {
+            "StepType": "SetActionStep",
+            "ActionSet": "FollowSecurityOfficerActionSet"
+          },
+          {
+            "StepType": "EscortStep",
+            "Destination": "ResortTowerSuiteElevators",
+            "ExpectedTimeToCompletion": 10.0
+          }
+        ]
+      },
+      "Hour": 12,
+      "Section": "Section1"
+    },
+    {
+      "Scenario": {
+        "Data": {
+          "UIName": "Intoxicated Guest",
+          "Sprite": "DrunkIcon",
+          "Duration": 400.0,
+          "VoiceOverID": "VO408",
+          "SuccessActionSet": "LeaveCasinoActionSet",
+          "FailureActionSet": "LeaveCasinoActionSet"
+        },
+        "Steps": [
+          {
+            "StepType": "SetActionStep",
+            "ActionSet": "RoamActionSet"
+          },
+          {
+            "StepType": "DialogueStep",
+            "DialogueStartNode": "IntoxicatedAngryGuestStart",
+            "DialogueVariables": "[]",
+            "ExpectedTimeToCompletion": 8.0
+          }
+        ]
+      },
+      "Hour": 16,
+      "Section": "Section2"
+    },
+    {
+      "Scenario": {
+        "Data": {
+          "UIName": "Escort Guest",
+          "Sprite": "EscortIcon",
+          "Duration": 400.0,
+          "VoiceOverID": "VOLost",
+          "SuccessActionSet": "LeaveCasinoActionSet",
+          "FailureActionSet": "LeaveCasinoActionSet"
+        },
+        "Steps": [
+          {
+            "StepType": "SetActionStep",
+            "ActionSet": "WaitActionSet"
+          },
+          {
+            "StepType": "DialogueStep",
+            "DialogueStartNode": "EscortDialoguePart1",
+            "DialogueVariables": "[{\"Name\":\"$escort_destination\",\"Value\":\"North Entrance\"}]",
+            "ExpectedTimeToCompletion": 8.0
+          },
+          {
+            "StepType": "SetActionStep",
+            "ActionSet": "FollowSecurityOfficerActionSet"
+          },
+          {
+            "StepType": "EscortStep",
+            "Destination": "NorthEntrance",
+            "ExpectedTimeToCompletion": 10.0
+          }
+        ]
+      },
+      "Hour": 20,
+      "Section": "Section1"
+    }
+  ],
+  "Day1": [
+    {
+      "Scenario": {
+        "Data": {
+          "UIName": "Escort Guest",
+          "Sprite": "EscortIcon",
+          "Duration": 400.0,
+          "VoiceOverID": "VOLost",
+          "SuccessActionSet": "LeaveCasinoActionSet",
+          "FailureActionSet": "LeaveCasinoActionSet"
+        },
+        "Steps": [
+          {
+            "StepType": "SetActionStep",
+            "ActionSet": "WaitActionSet"
+          },
+          {
+            "StepType": "DialogueStep",
+            "DialogueStartNode": "EscortDialoguePart1",
+            "DialogueVariables": "[{\"Name\":\"$escort_destination\",\"Value\":\"Resort Tower Suite Elevators\"}]",
+            "ExpectedTimeToCompletion": 8.0
+          },
+          {
+            "StepType": "SetActionStep",
+            "ActionSet": "FollowSecurityOfficerActionSet"
+          },
+          {
+            "StepType": "EscortStep",
+            "Destination": "ResortTowerSuiteElevators",
+            "ExpectedTimeToCompletion": 10.0
+          }
+        ]
+      },
+      "Hour": 0,
+      "Section": "Section1"
+    },
+    {
+      "Scenario": {
+        "Data": {
+          "UIName": "Escort Guest",
+          "Sprite": "EscortIcon",
+          "Duration": 400.0,
+          "VoiceOverID": "VOLost",
+          "SuccessActionSet": "LeaveCasinoActionSet",
+          "FailureActionSet": "LeaveCasinoActionSet"
+        },
+        "Steps": [
+          {
+            "StepType": "SetActionStep",
+            "ActionSet": "WaitActionSet"
+          },
+          {
+            "StepType": "DialogueStep",
+            "DialogueStartNode": "EscortDialoguePart1",
+            "DialogueVariables": "[{\"Name\":\"$escort_destination\",\"Value\":\"Bell Desk\"}]",
+            "ExpectedTimeToCompletion": 8.0
+          },
+          {
+            "StepType": "SetActionStep",
+            "ActionSet": "FollowSecurityOfficerActionSet"
+          },
+          {
+            "StepType": "EscortStep",
+            "Destination": "BellDesk",
+            "ExpectedTimeToCompletion": 10.0
+          }
+        ]
+      },
+      "Hour": 2,
+      "Section": "Section2"
+    },
+    {
+      "Scenario": {
+        "Data": {
+          "UIName": "Intoxicated Guest",
+          "Sprite": "DrunkIcon",
+          "Duration": 400.0,
+          "VoiceOverID": "VO408",
+          "SuccessActionSet": "LeaveCasinoActionSet",
+          "FailureActionSet": "LeaveCasinoActionSet"
+        },
+        "Steps": [
+          {
+            "StepType": "SetActionStep",
+            "ActionSet": "RoamActionSet"
+          },
+          {
+            "StepType": "DialogueStep",
+            "DialogueStartNode": "UnresponsiveGuestStart",
+            "DialogueVariables": "[]",
+            "ExpectedTimeToCompletion": 8.0
+          }
+        ]
+      },
+      "Hour": 6,
+      "Section": "Section2"
+    },
+    {
+      "Scenario": {
+        "Data": {
+          "UIName": "Escort Guest",
+          "Sprite": "EscortIcon",
+          "Duration": 400.0,
+          "VoiceOverID": "VOLost",
+          "SuccessActionSet": "LeaveCasinoActionSet",
+          "FailureActionSet": "LeaveCasinoActionSet"
+        },
+        "Steps": [
+          {
+            "StepType": "SetActionStep",
+            "ActionSet": "WaitActionSet"
+          },
+          {
+            "StepType": "DialogueStep",
+            "DialogueStartNode": "EscortDialoguePart1",
+            "DialogueVariables": "[{\"Name\":\"$escort_destination\",\"Value\":\"North Entrance\"}]",
+            "ExpectedTimeToCompletion": 8.0
+          },
+          {
+            "StepType": "SetActionStep",
+            "ActionSet": "FollowSecurityOfficerActionSet"
+          },
+          {
+            "StepType": "EscortStep",
+            "Destination": "NorthEntrance",
+            "ExpectedTimeToCompletion": 10.0
+          }
+        ]
+      },
+      "Hour": 12,
+      "Section": "Section1"
+    },
+    {
+      "Scenario": {
+        "Data": {
+          "UIName": "Intoxicated Guest",
+          "Sprite": "DrunkIcon",
+          "Duration": 400.0,
+          "VoiceOverID": "VO408",
+          "SuccessActionSet": "LeaveCasinoActionSet",
+          "FailureActionSet": "LeaveCasinoActionSet"
+        },
+        "Steps": [
+          {
+            "StepType": "SetActionStep",
+            "ActionSet": "RoamActionSet"
+          },
+          {
+            "StepType": "DialogueStep",
+            "DialogueStartNode": "Start",
+            "DialogueVariables": "[]",
+            "ExpectedTimeToCompletion": 8.0
+          }
+        ]
+      },
+      "Hour": 16,
+      "Section": "Section2"
+    },
+    {
+      "Scenario": {
+        "Data": {
+          "UIName": "Intoxicated Guest",
+          "Sprite": "DrunkIcon",
+          "Duration": 400.0,
+          "VoiceOverID": "VO408",
+          "SuccessActionSet": "LeaveCasinoActionSet",
+          "FailureActionSet": "LeaveCasinoActionSet"
+        },
+        "Steps": [
+          {
+            "StepType": "SetActionStep",
+            "ActionSet": "RoamActionSet"
+          },
+          {
+            "StepType": "DialogueStep",
+            "DialogueStartNode": "PukingGuestStart",
+            "DialogueVariables": "[]",
+            "ExpectedTimeToCompletion": 8.0
+          },
+          {
+            "StepType": "SetActionStep",
+            "ActionSet": "FollowSecurityOfficerActionSet"
+          },
+          {
+            "StepType": "EscortStep",
+            "Destination": "ResortTowerSuiteElevators",
+            "ExpectedTimeToCompletion": 10.0
+          }
+        ]
+      },
+      "Hour": 20,
+      "Section": "Section1"
+    }
+  ]
+}
